@@ -12,18 +12,61 @@ import {
 import About from './About.js';
 import Header from './Header.js';
 import Error from './Error.js';
+import dayBackground from './images/day-background.jpg';
+import nightBackground from './images/night-background.jpg';
+
+class App extends React.Component {
+
+  dayBackground = {
+    backgroundImage: `url(${dayBackground})`
+  }
+  nightBackground = {
+    backgroundImage: `url(${nightBackground})`
+  }
+
+  dayCard = {
+    backgroundColor: "white"
+  }
+  nightCard = {
+    backgroundColor: "white"
+  }
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      dayMode: true
+    };
+    this.setDayMode = this.setDayMode.bind(this);
+  }
+
+  setDayMode(b) {
+    this.setState({ dayMode: b })
+  }
+  
+  render() {
+    return (
+      <Router>
+        <div className="website" style={this.state.dayMode ? this.dayBackground : this.nightBackground}>
+          <Header dayMode={this.state.dayMode} setDayMode={this.setDayMode}/>
+          
+          <div className="card" style={this.dayMode ? this.dayCard : this.nightCard}>
+            hello
+            <Switch>
+              <Route exact path="/" component={About}></Route>
+              <Route component={Error}></Route>
+            </Switch>
+          </div>
+          
+        </div>
+      </Router>
+      )
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Header />
-
-      <Switch>
-        <Route exact path="/" component={About}></Route>
-        <Route component={Error}></Route>
-      </Switch>
-
-    </Router>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
