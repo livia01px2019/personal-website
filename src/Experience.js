@@ -61,26 +61,28 @@ export default class Experience extends React.Component {
           <h3 className="section-header" 
             style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>
               my experience</h3> 
-          <h4 className="experience-subtitle">software engineering</h4>
+          <h4 className="experience-subtitle"
+            style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>software engineering</h4>
           <div>
             {this.state.software.map((role, index) => (
               <div key={index} style={{display: "flex", flexDirection: "row", alignItems: "top"}}>
                 <img style={{width: "50px", height: "auto", marginRight: "20px", objectFit: "contain", objectPosition: "top"}} src={role.img}></img>
                 <div>
-                  <h5><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
-                  <p>{role.description}</p>
+                  <h5 style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
+                  <p style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>{role.description}</p>
                 </div>
               </div>
             ))}
           </div>
-          <h4 className="experience-subtitle">teaching</h4>
+          <h4 className="experience-subtitle"
+            style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>teaching</h4>
           <div>
             {this.state.teaching.map((role, index) => (
               <div key={index} style={{display: "flex", flexDirection: "row", alignItems: "top"}}>
                 <img style={{width: "50px", height: "auto", marginRight: "20px", objectFit: "contain", objectPosition: "top"}} src={role.img}></img>
                 <div>
-                  <h5><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
-                  <p>{role.description}</p>
+                  <h5 style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
+                  <p style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>{role.description}</p>
                 </div>
               </div>
             ))}
