@@ -72,6 +72,11 @@ class App extends React.Component {
                   <About {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
                   nightTextStyle={this.nightTextStyle} />
                 )}></Route>
+              <Route exact path="/" component={
+                (props) => (
+                  <About {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
+                  nightTextStyle={this.nightTextStyle} />
+                )}></Route>
               <Route exact path="/projects" component={
                 (props) => (
                   <Projects {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}

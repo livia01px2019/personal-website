@@ -12,10 +12,16 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default class Header extends React.Component {
+    dayBackground = {
+      backgroundColor: "#DFFDFF"
+    }
+    nightBackground = {
+      backgroundColor: "#64797A"
+    }
 
     render() {
       return (
-        <Navbar expand="lg" sticky="top" id="nav" className="navbar-expand-md">
+        <Navbar style={this.props.dayMode ? this.dayBackground : this.nightBackground} expand="md" sticky="top" id="nav">
                 <Navbar.Brand className="header-left">
                 <img 
                   onClick={() => {this.props.setDayMode(!this.props.dayMode)}}
