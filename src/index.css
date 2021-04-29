@@ -56,8 +56,32 @@ code {
   margin-bottom: 0px
 }
 
-.card {
+.section {
   width: calc(100vw - 50px);
-  min-height: calc(100vh - 200px);
-  margin: 25px;
+  min-height: calc(100vh - 400px);
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section-header {
+  margin-bottom: 30px;
+}
+
+.my-picture {
+  border-radius: 10px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.my-description {
+  min-width: 50px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

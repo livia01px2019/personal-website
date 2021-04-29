@@ -12,6 +12,10 @@ import {
 import About from './About.js';
 import Header from './Header.js';
 import Error from './Error.js';
+import Projects from './Projects.js';
+import Experience from './Experience.js';
+import Skills from './Skills.js';
+
 import dayBackground from './images/day-background.jpg';
 import nightBackground from './images/night-background.jpg';
 
@@ -28,7 +32,14 @@ class App extends React.Component {
     backgroundColor: "white"
   }
   nightCard = {
-    backgroundColor: "white"
+    backgroundColor: "black"
+  }
+
+  dayTextStyle = {
+    color: "black"
+  }
+  nightTextStyle = {
+    color: "white"
   }
 
   constructor(props) {
@@ -48,13 +59,39 @@ class App extends React.Component {
     return (
       <Router>
         <div className="website" style={this.state.dayMode ? this.dayBackground : this.nightBackground}>
-          <Header dayMode={this.state.dayMode} setDayMode={this.setDayMode}/>
+          <Header 
+            dayMode={this.state.dayMode} 
+            setDayMode={this.setDayMode} 
+            dayTextStyle={this.dayTextStyle}
+            nightTextStyle={this.nightTextStyle}/>
           
-          <div className="card" style={this.dayMode ? this.dayCard : this.nightCard}>
-            hello
+          <div className="section" style={this.state.dayMode ? this.dayCard : this.nightCard}>
             <Switch>
-              <Route exact path="/" component={About}></Route>
-              <Route component={Error}></Route>
+              <Route exact path="/" component={
+                (props) => (
+                  <About {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
+                  nightTextStyle={this.nightTextStyle} />
+                )}></Route>
+              <Route exact path="/projects" component={
+                (props) => (
+                  <Projects {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
+                  nightTextStyle={this.nightTextStyle} />
+                )}></Route>
+              <Route exact path="/experience" component={
+                (props) => (
+                  <Experience {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
+                  nightTextStyle={this.nightTextStyle} />
+                )}></Route>
+              <Route exact path="/skills" component={
+                (props) => (
+                  <Skills {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
+                  nightTextStyle={this.nightTextStyle} />
+                )}></Route>
+              <Route component={
+                (props) => (
+                  <Error {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
+                  nightTextStyle={this.nightTextStyle} />
+                )}></Route>
             </Switch>
           </div>
           

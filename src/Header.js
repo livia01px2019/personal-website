@@ -14,30 +14,23 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export default class Header extends React.Component {
 
     render() {
-      const dayTextStyle = {
-        color: "black"
-      }
-      const nightTextStyle = {
-        color: "white"
-      }
-
       return (
-        <Navbar expand="lg" sticky="top" id="nav">
+        <Navbar expand="lg" sticky="top" id="nav" className="navbar-expand-md">
                 <Navbar.Brand className="header-left">
                 <img 
                   onClick={() => {this.props.setDayMode(!this.props.dayMode)}}
                   src={this.props.dayMode ? sunImage : moonImage}
                   alt="picture of sun"
                   className="logo" />
-                  <h1 className="header-brand" style={this.props.dayMode ? dayTextStyle : nightTextStyle}>LIVIA ZHU</h1>
+                  <h1 className="header-brand" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>LIVIA ZHU</h1>
                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
-                      <Link to="/" className="header-link" style={this.props.dayMode ? dayTextStyle : nightTextStyle}>ABOUT</Link>
-                      <Link to="/" className="header-link" style={this.props.dayMode ? dayTextStyle : nightTextStyle}>PROJECTS</Link>
-                      <Link to="/" className="header-link" style={this.props.dayMode ? dayTextStyle : nightTextStyle}>EXPERIENCE</Link>
-                      <Link to="/" className="header-link" style={this.props.dayMode ? dayTextStyle : nightTextStyle}>SKILLS</Link>
+                      <Link to="/" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>ABOUT</Link>
+                      <Link to="/projects" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>PROJECTS</Link>
+                      <Link to="/experience" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>EXPERIENCE</Link>
+                      <Link to="/skills" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>SKILLS</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
