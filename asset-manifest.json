@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/personal-website/static/js/main.4fd1bd0f.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.4fd1bd0f.chunk.js.map",
-    "runtime-main.js": "/personal-website/static/js/runtime-main.6ca3f24e.js",
-    "runtime-main.js.map": "/personal-website/static/js/runtime-main.6ca3f24e.js.map",
-    "static/js/2.f3a95774.chunk.js": "/personal-website/static/js/2.f3a95774.chunk.js",
-    "static/js/2.f3a95774.chunk.js.map": "/personal-website/static/js/2.f3a95774.chunk.js.map",
-    "static/js/3.5b863fef.chunk.js": "/personal-website/static/js/3.5b863fef.chunk.js",
-    "static/js/3.5b863fef.chunk.js.map": "/personal-website/static/js/3.5b863fef.chunk.js.map",
+    "main.css": "/personal-website/static/css/main.e527aaf8.chunk.css",
+    "main.js": "/personal-website/static/js/main.6a3fed56.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.6a3fed56.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.8a9441d3.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.8a9441d3.js.map",
+    "static/js/2.e683cd6b.chunk.js": "/personal-website/static/js/2.e683cd6b.chunk.js",
+    "static/js/2.e683cd6b.chunk.js.map": "/personal-website/static/js/2.e683cd6b.chunk.js.map",
+    "static/js/3.0025899d.chunk.js": "/personal-website/static/js/3.0025899d.chunk.js",
+    "static/js/3.0025899d.chunk.js.map": "/personal-website/static/js/3.0025899d.chunk.js.map",
     "index.html": "/personal-website/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/personal-website/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.f3a95774.chunk.js.LICENSE.txt": "/personal-website/static/js/2.f3a95774.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/personal-website/static/media/logo.6ce24c58.svg"
+    "static/css/main.e527aaf8.chunk.css.map": "/personal-website/static/css/main.e527aaf8.chunk.css.map",
+    "static/js/2.e683cd6b.chunk.js.LICENSE.txt": "/personal-website/static/js/2.e683cd6b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/personal-website/static/media/Sora-Light.7e014c41.ttf",
+    "static/media/day-background.4bcaadb1.jpg": "/personal-website/static/media/day-background.4bcaadb1.jpg",
+    "static/media/lzhu17.dd58acd7.jpg": "/personal-website/static/media/lzhu17.dd58acd7.jpg",
+    "static/media/moon.d8bd4c71.png": "/personal-website/static/media/moon.d8bd4c71.png",
+    "static/media/night-background.d915b78f.jpg": "/personal-website/static/media/night-background.d915b78f.jpg",
+    "static/media/sun.07c4690a.png": "/personal-website/static/media/sun.07c4690a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ca3f24e.js",
-    "static/js/2.f3a95774.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.4fd1bd0f.chunk.js"
+    "static/js/runtime-main.8a9441d3.js",
+    "static/js/2.e683cd6b.chunk.js",
+    "static/css/main.e527aaf8.chunk.css",
+    "static/js/main.6a3fed56.chunk.js"
   ]
 }
