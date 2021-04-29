@@ -67,7 +67,7 @@ class App extends React.Component {
           
           <div className="section" style={this.state.dayMode ? this.dayCard : this.nightCard}>
             <Switch>
-              <Route exact path="/" component={
+              <Route exact path="/personal-website" component={
                 (props) => (
                   <About {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
                   nightTextStyle={this.nightTextStyle} />
