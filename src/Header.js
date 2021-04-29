@@ -34,9 +34,9 @@ export default class Header extends React.Component {
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
                       <Link to="/personal-website" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>ABOUT</Link>
-                      <Link to="/projects" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>PROJECTS</Link>
-                      <Link to="/experience" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>EXPERIENCE</Link>
-                      <Link to="/skills" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>SKILLS</Link>
+                      <Link to="/personal-website/projects" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>PROJECTS</Link>
+                      <Link to="/personal-website/experience" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>EXPERIENCE</Link>
+                      <Link to="/personal-website/skills" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>SKILLS</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
