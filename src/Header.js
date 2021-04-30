@@ -1,7 +1,6 @@
 import React from 'react';
 import './index.css';
 import {
-    BrowserRouter as Router,
     Link
 } from "react-router-dom";
 import sunImage from './images/sun.png';
