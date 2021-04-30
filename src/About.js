@@ -44,8 +44,7 @@ export default class About extends React.Component {
     render() {
       return (
         <div style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>
-          <h3 className="section-header" 
-            >about me</h3> 
+          <h3 className="section-header">about me</h3> 
             <div className="about-me">
               <div className="about-me-left">
                 <img className="my-picture" src={meImg}></img>
