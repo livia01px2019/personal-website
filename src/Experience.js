@@ -14,7 +14,8 @@ export default class Experience extends React.Component {
             company: "facebook",
             role: "software engineering intern",
             img: facebookImg,
-            description: "Sole engineer of the company website promoting new products ahead of product launch, obtaining 900+ page views in the first month. Refactored company website using Vue.js to improve code organization and extensibility, and initiated company website’s responsive design. Engineer Swagger APIs and maintain backend of the website and WeChat miniprograms using Java, Spring framework, and MySQL + Redis databases. ",
+            description: "I am an incoming software engineering intern for Facebook for summer 2021.",
+            date: "May 2021 - ",
             mainLink: "https://www.facebook.com/",
             links: [
               {
@@ -28,6 +29,7 @@ export default class Experience extends React.Component {
             role: "software engineering intern",
             img: osheeppsImg,
             description: "Sole engineer of the company website promoting new products ahead of product launch, obtaining 900+ page views in the first month. Refactored company website using Vue.js to improve code organization and extensibility, and initiated company website’s responsive design. Engineer Swagger APIs and maintain backend of the website and WeChat miniprograms using Java, Spring framework, and MySQL + Redis databases. ",
+            date: "Sept - Dec 2020",
             mainLink: "https://www.o-sheepps.com/",
             links: [
               {
@@ -43,6 +45,7 @@ export default class Experience extends React.Component {
             role: "undergraduate teaching assistant",
             img: brownImg,
             description: "",
+            date: "Sept - Dec 2020",
             mainLink: "https://www.brown.edu/",
             links: [
               {
@@ -68,8 +71,12 @@ export default class Experience extends React.Component {
               <div key={index} style={{display: "flex", flexDirection: "row", alignItems: "top"}}>
                 <img style={{width: "50px", height: "auto", marginRight: "20px", objectFit: "contain", objectPosition: "top"}} src={role.img}></img>
                 <div>
-                  <h5 style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
-                  <p style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>{role.description}</p>
+                  <div style={{width: "100%", display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+                    <h5 style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}><a href={role.mainLink}>
+                      {role.company}</a> | {role.role}</h5>
+                    <h5>{role.date}</h5>
+                  </div>
+                  <p style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle} className="new-line">{role.description}</p>
                 </div>
               </div>
             ))}
@@ -82,7 +89,7 @@ export default class Experience extends React.Component {
                 <img style={{width: "50px", height: "auto", marginRight: "20px", objectFit: "contain", objectPosition: "top"}} src={role.img}></img>
                 <div>
                   <h5 style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
-                  <p style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>{role.description}</p>
+                  <p style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle} className="new-line">{role.description}</p>
                 </div>
               </div>
             ))}

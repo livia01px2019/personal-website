@@ -99,3 +99,7 @@ code {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
+.new-line {
+  white-space: pre-line;
+}
