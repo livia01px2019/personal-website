@@ -17,7 +17,7 @@ export default class Experience extends React.Component {
             role: "software engineering intern",
             img: facebookImg,
             description: "I am an incoming software engineering intern for Facebook for summer 2021.",
-            date: "May - Aug 2021",
+            date: "may - aug 2021",
             mainLink: "https://www.facebook.com/",
             links: [
             ]
@@ -27,7 +27,7 @@ export default class Experience extends React.Component {
             role: "software engineering intern",
             img: osheeppsImg,
             description: "Sole engineer of the company website promoting new products ahead of product launch, obtaining 900+ page views in the first month. \nRefactored company website using Vue.js to improve code organization and extensibility, and initiated company website’s responsive design. \nEngineered Swagger APIs and maintain backend of the website and WeChat miniprograms using Java, Spring framework, and MySQL + Redis databases. ",
-            date: "Sept - Dec 2020",
+            date: "sept - dec 2020",
             mainLink: "https://www.o-sheepps.com/",
             links: [
             ]
@@ -37,7 +37,7 @@ export default class Experience extends React.Component {
             role: "software engineering intern",
             img: roborockImg,
             description: "Devised Simultaneous Localization and Mapping (SLAM) algorithms in C++ for robot vacuums to test software integration with new hardware. \nOptimized an Adaptive Monte Carlo Localization-based SLAM algorithm to run in real-time on robot vacuums with sensor updates every 200ms.\nConverted and optimized programs from Python to C++, improving time performance by over 99%.",
-            date: "May - Aug 2020",
+            date: "may - aug 2020",
             mainLink: "https://us.roborock.com/",
             links: [
             ]
@@ -47,7 +47,7 @@ export default class Experience extends React.Component {
             role: "software engineering intern",
             img: developImg,
             description: "Liaised between developers and CARE Live Well, a Zambian healthcare nonprofit, to publicize their social impact to potential investors on their website. \nManaged 5 software engineers to conduct user testing, modernize the front-end and create a backend that is easily updatable by the client. \nPlan project lifecycle, transform client requests into technical requirements, conduct focus groups, prototype pages in Figma and develop using React.js.",
-            date: "Sept 2020 - Apr 2021",
+            date: "sept 2020 - apr 2021",
             mainLink: "https://www.developforgood.org/",
             links: [
               {
@@ -63,7 +63,7 @@ export default class Experience extends React.Component {
             role: "undergraduate teaching assistant",
             img: brownImg,
             description: "Design/lead labs and workshops, hold TA hours, answer questions online, and grade assignments.\n\nCSCI0190 - Accelerated Intro to CS (Fall 2021): \nFunctional programming class of 70 students taught in Pyret. \n\nCSCI0320 - Software Engineering (Spring 2021): \nClass of 210 students taught in Java and various technologies such as React.js. Mentored 3 final project groups.\n\nCSCI0190 - Accelerated Intro to CS (Fall 2020): \nFunctional programming class of 120 students taught in Pyret. Mentored 8 students and promoted gender diversity through mixers.",
-            date: "Sept 2020 - Dec 2021",
+            date: "sept 2020 - dec 2021",
             mainLink: "https://www.brown.edu/",
             links: [
               {
@@ -81,7 +81,7 @@ export default class Experience extends React.Component {
             role: "tutor",
             img: brownImg,
             description: "Develop and execute lessons in HTML/CSS/JavaScript and basic programming concepts to middle and elementary school students. \nCreate and execute weekly extracurricular lesson plans in topics from geography to cell biology for a group of 15 elementary schoolers. \nTutored at a local underfunded high school for weekly drop-in math and science homework.",
-            date: "Sept 2019 - Dec 2020",
+            date: "sept 2019 - dec 2020",
             mainLink: "https://www.brown.edu/academics/college/swearer/community-corps-partners-and-student-groups",
             links: [
             ]
