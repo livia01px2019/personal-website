@@ -52,7 +52,7 @@ export default class About extends React.Component {
               </div>
               
               <div>
-                <p className="my-description">Hi! My name is Livia and I'm a sophomore studying Computer Science at Brown University graduating in December 2023. Currently, I am a summer software engineering intern at Facebook in the Cosco team. I'm interested in Software Development and Systems Programming. Outside of CS, I enjoy English Literature and education (I'm a three-time Undergradute Teaching Assistant at Brown)!</p>
+                <p className="my-description">Hi! My name is Livia and I'm a sophomore from Shanghai, China. I'm currently studying Computer Science at Brown University, graduating in December 2023. Currently, I am a summer software engineering intern at Facebook in the Cosco team. I'm interested in Software Development and Systems Programming. Outside of CS, I enjoy English Literature and education (I'm a three-time Undergradute Teaching Assistant at Brown)!</p>
                 <p className="my-description">When I'm not studying or holding TA hours, I love to bake, sew, play tennis, and solve crosswords. I also solely listen to Broadway musicals or Taylor Swift.</p>
                 <div className="about-me-links">
                   {this.state.links.map((link, index) => (

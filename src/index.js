@@ -14,7 +14,6 @@ import Header from './Header.js';
 import Error from './Error.js';
 import Projects from './Projects.js';
 import Experience from './Experience.js';
-import Skills from './Skills.js';
 
 import dayBackground from './images/day-background.jpg';
 import nightBackground from './images/night-background.jpg';
@@ -54,6 +53,16 @@ class App extends React.Component {
   setDayMode(b) {
     this.setState({ dayMode: b })
   }
+
+  componentDidMount() {
+    const date = new Date();
+    const hours = date.getHours();
+    if (hours < 7 || hours > 20) {
+      this.setDayMode(false);
+    } else {
+      this.setDayMode(true);
+    }
+  }
   
   render() {
     return (
@@ -85,11 +94,6 @@ class App extends React.Component {
               <Route exact path="/experience" component={
                 (props) => (
                   <Experience {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
-                  nightTextStyle={this.nightTextStyle} />
-                )}></Route>
-              <Route exact path="/skills" component={
-                (props) => (
-                  <Skills {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
                   nightTextStyle={this.nightTextStyle} />
                 )}></Route>
               <Route component={
