@@ -99,7 +99,7 @@ export default class Experience extends React.Component {
           <div>
             {this.state.software.map((role, index) => (
               <div key={index} style={{display: "flex", flexDirection: "row", alignItems: "top"}}>
-                <img style={{width: "50px", height: "auto", marginRight: "20px", objectFit: "contain", objectPosition: "top"}} src={role.img}></img>
+                <img style={{width: "50px", height: "50px", marginRight: "20px", objectFit: "contain", objectPosition: "top"}} src={role.img}></img>
                 <div style={{width: "100%"}} >
                   <div style={{width: "100%", display: "flex", flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap"}}>
                     <h5><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
@@ -119,7 +119,7 @@ export default class Experience extends React.Component {
           <div>
             {this.state.teaching.map((role, index) => (
               <div key={index} style={{display: "flex", flexDirection: "row", alignItems: "top"}}>
-                <img style={{width: "50px", height: "auto", marginRight: "20px", objectFit: "contain", objectPosition: "top"}} src={role.img}></img>
+                <img style={{width: "50px", height: "50px", marginRight: "20px", objectFit: "contain", objectPosition: "top"}} src={role.img}></img>
                 <div style={{width: "100%"}} >
                   <div style={{width: "100%", display: "flex", flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap"}}>
                     <h5><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
