@@ -58,7 +58,6 @@ code {
 }
 
 .section {
-  width: calc(100vw - 50px);
   min-height: calc(100vh - 400px);
   margin-left: 25px;
   margin-right: 25px;
@@ -68,22 +67,44 @@ code {
 
 .section-header {
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-me-left {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  width: 200px;
 }
 
 .my-picture {
+  object-fit: contain;
+  object-position: top;
+  margin-bottom: 20px;
   border-radius: 10px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+}
+
+.about-me-links a {
+  margin: 10px;
+}
+
+.about-me-links {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .my-description {
   min-width: 50px;
+  max-width: 500px;
+  margin-right: 20px;
 }
 
 .about-me {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projectButton {
