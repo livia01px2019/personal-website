@@ -18,6 +18,10 @@ code {
     monospace;
 }
 
+a {
+  color: #3090f7;
+}
+
 .website {
   min-height: 100vh;
   width: 100vw;
@@ -59,10 +63,17 @@ code {
 
 .section {
   min-height: calc(100vh - 400px);
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
   padding: 20px;
   border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .section {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 .section-header {
@@ -123,4 +134,12 @@ code {
 
 .new-line {
   white-space: pre-line;
+}
+
+.experience-links {
+  margin-bottom: 1rem;
+}
+
+.experience-links a{
+  margin-right: 10px;
 }
