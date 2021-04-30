@@ -35,7 +35,7 @@ export default class About extends React.Component {
           },
           {
             name: "resume",
-            link: ""
+            link: "https://drive.google.com/file/d/11xbtUp_Zu0DZP_JZSPqDmnkw-47u7C50/view?usp=sharing"
           }
         ]
       }
