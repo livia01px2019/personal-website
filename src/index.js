@@ -67,7 +67,7 @@ class App extends React.Component {
           
           <div className="section" style={this.state.dayMode ? this.dayCard : this.nightCard}>
             <Switch>
-              <Route exact path="/personal-website" component={
+              <Route exact path="/" component={
                 (props) => (
                   <About {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
                   nightTextStyle={this.nightTextStyle} />
@@ -77,17 +77,17 @@ class App extends React.Component {
                   <About {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
                   nightTextStyle={this.nightTextStyle} />
                 )}></Route>
-              <Route exact path="/personal-website/projects" component={
+              <Route exact path="/projects" component={
                 (props) => (
                   <Projects {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
                   nightTextStyle={this.nightTextStyle} />
                 )}></Route>
-              <Route exact path="/personal-website/experience" component={
+              <Route exact path="/experience" component={
                 (props) => (
                   <Experience {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
                   nightTextStyle={this.nightTextStyle} />
                 )}></Route>
-              <Route exact path="/personal-website/skills" component={
+              <Route exact path="/skills" component={
                 (props) => (
                   <Skills {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
                   nightTextStyle={this.nightTextStyle} />
