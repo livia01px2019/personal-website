@@ -66,7 +66,7 @@ export default class About extends React.Component {
                 <h5 style={{marginTop: "1rem"}}>coursework</h5>
                 <ul>
                   {this.state.courses.map((course, index) => (
-                    <li key={index}>{course}</li>
+                    <li key={index}><p>{course}</p></li>
                   ))}
                 </ul>
               </div>

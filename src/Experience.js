@@ -111,11 +111,13 @@ export default class Experience extends React.Component {
                     <h5><i>{role.date}</i></h5>
                   </div>
                   <p className="new-line">{role.description}</p>
+                  <p>
                   <div className="experience-links">
                     {role.links.map((link, index) => (
                       <a key={index} href={link.link}><i> {link.name} </i> </a>
                     ))}
                   </div>
+                  </p>
                 </div>
               </div>
             ))}
@@ -131,11 +133,13 @@ export default class Experience extends React.Component {
                     <h5><i>{role.date}</i></h5>
                   </div>
                   <p className="new-line">{role.description}</p>
+                  <p>
                   <div className="experience-links">
                     {role.links.map((link, index) => (
                       <a key={index} href={link.link}><i> {link.name} </i> </a>
                     ))}
                   </div>
+                  </p>
                 </div>
               </div>
             ))}

@@ -136,7 +136,7 @@ export default class Projects extends React.Component {
                 <p class="card-text new-line">{project.description}</p>
                 <div className="projectButtons">
                   {project.links.map((link, linkIndex) => (
-                    <a key="linkIndex" className="projectButton" href={link.link}><i>{link.name} </i></a> 
+                    <a key="linkIndex" className="projectButton" href={link.link}><p><i>{link.name} </i></p></a> 
                   ))}
                 </div>
               </div>
