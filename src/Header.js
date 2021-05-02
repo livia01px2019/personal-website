@@ -8,7 +8,6 @@ import moonImage from './images/moon.png';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default class Header extends React.Component {
     dayBackground = {
@@ -25,7 +24,7 @@ export default class Header extends React.Component {
                 <img 
                   onClick={() => {this.props.setDayMode(!this.props.dayMode)}}
                   src={this.props.dayMode ? sunImage : moonImage}
-                  alt="picture of sun"
+                  alt="sun"
                   className="logo" />
                   <h1 className="header-brand" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>LIVIA ZHU</h1>
                </Navbar.Brand>

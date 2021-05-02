@@ -34,7 +34,7 @@ export default class Experience extends React.Component {
           },
           {
             company: "roborock",
-            role: "software engineering intern",
+            role: "robotics software development intern ",
             img: roborockImg,
             description: "Devised Simultaneous Localization and Mapping (SLAM) algorithms in C++ for robot vacuums to test software integration with new hardware. \nOptimized an Adaptive Monte Carlo Localization-based SLAM algorithm to run in real-time on robot vacuums with sensor updates every 200ms.\nConverted and optimized programs from Python to C++, improving time performance by over 99%.",
             date: "may - aug 2020",
@@ -44,9 +44,9 @@ export default class Experience extends React.Component {
           },
           {
             company: "develop for good",
-            role: "software engineering intern",
+            role: "product manager and software engineering volunteer",
             img: developImg,
-            description: "Liaised between developers and CARE Live Well, a Zambian healthcare nonprofit, to publicize their social impact to potential investors on their website. \nManaged 5 software engineers to conduct user testing, modernize the front-end and create a backend that is easily updatable by the client. \nPlan project lifecycle, transform client requests into technical requirements, conduct focus groups, prototype pages in Figma and develop using React.js.",
+            description: "Liaised between developers and CARE Live Well, a Zambian healthcare nonprofit, to publicize their social impact to potential investors on their website. \nManaged 5 software engineers to conduct user testing, modernize the front-end and create a backend that is easily updatable by the client in AWS. \nPlan project lifecycle, transform client requests into technical requirements, conduct focus groups, prototype pages in Figma and develop using React.js.",
             date: "sept 2020 - apr 2021",
             mainLink: "https://www.developforgood.org/",
             links: [
@@ -80,7 +80,7 @@ export default class Experience extends React.Component {
             company: "ignitecs and community corps",
             role: "tutor",
             img: brownImg,
-            description: "Develop and execute lessons in HTML/CSS/JavaScript and basic programming concepts to middle and elementary school students. \nCreate and execute weekly extracurricular lesson plans in topics from geography to cell biology for a group of 15 elementary schoolers. \nTutored at a local underfunded high school for weekly drop-in math and science homework.",
+            description: "Developed and executed lessons in HTML/CSS/JavaScript and basic programming concepts to middle and elementary school students. \nCreated and executed weekly extracurricular lesson plans in topics from geography to cell biology for a group of 15 elementary schoolers. \nTutored at a local underfunded high school for weekly drop-in math and science homework.",
             date: "sept 2019 - dec 2020",
             mainLink: "https://www.brown.edu/academics/college/swearer/community-corps-partners-and-student-groups",
             links: [
@@ -108,7 +108,7 @@ export default class Experience extends React.Component {
                 <div style={{width: "100%"}} >
                   <div style={{width: "100%", display: "flex", flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap"}}>
                     <h5><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
-                    <h5>{role.date}</h5>
+                    <h5><i>{role.date}</i></h5>
                   </div>
                   <p className="new-line">{role.description}</p>
                   <div className="experience-links">
@@ -128,7 +128,7 @@ export default class Experience extends React.Component {
                 <div style={{width: "100%"}} >
                   <div style={{width: "100%", display: "flex", flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap"}}>
                     <h5><a href={role.mainLink}>{role.company}</a> | {role.role}</h5>
-                    <h5>{role.date}</h5>
+                    <h5><i>{role.date}</i></h5>
                   </div>
                   <p className="new-line">{role.description}</p>
                   <div className="experience-links">

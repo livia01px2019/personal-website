@@ -6,7 +6,6 @@ import conserveImage from './images/conserve.jpg';
 import hiImage from './images/hi-my-name-is.jpg';
 import theseusImage from './images/theseus.png';
 import musicImage from './images/music.png';
-import { Row } from 'react-bootstrap';
 
 export default class Projects extends React.Component {
   constructor(props) {

@@ -52,7 +52,7 @@ export default class About extends React.Component {
           <h3 className="section-header">about me</h3> 
             <div className="about-me">
               <div className="about-me-left">
-                <img className="my-picture" src={meImg}></img>
+                <img className="my-picture" src={meImg} alt="me"></img>
               </div>
               
               <div>
