@@ -41,6 +41,11 @@ export default class About extends React.Component {
       }
     }
 
+    componentDidMount() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
     render() {
       return (
         <div style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>

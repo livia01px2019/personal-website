@@ -115,31 +115,36 @@ export default class Projects extends React.Component {
       ]
     };
   }
+
+  componentDidMount() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
   
-    render() {
-      return (
-        <div>
-          <h3 className="section-header" 
-            style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>
-              my projects</h3> 
-          
-          <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center"}}>
-            {this.state.projects.map((project, index) => (
-              <div className={this.props.dayMode ? "card" : "card bg-dark text-white"} style={{width: "30rem", margin: "10px"}} key={index}>
-                <a href={project.mainLink}><img class="card-img-top" style={{height: "200px", objectFit: "contain"}} src={project.src} alt={project.title}></img></a>
-                <div class="card-body">
-                  <h5 class="card-title"><a href={project.mainLink}>{project.title}</a> | {project.date}</h5>
-                  <p class="card-text new-line">{project.description}</p>
-                  <div className="projectButtons">
-                    {project.links.map((link, linkIndex) => (
-                      <a key="linkIndex" className="projectButton" href={link.link}><i>{link.name} </i></a> 
-                    ))}
-                  </div>
+  render() {
+    return (
+      <div>
+        <h3 className="section-header" 
+          style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>
+            my projects</h3> 
+        
+        <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center"}}>
+          {this.state.projects.map((project, index) => (
+            <div className={this.props.dayMode ? "card" : "card bg-dark text-white"} style={{width: "30rem", margin: "10px"}} key={index}>
+              <a href={project.mainLink}><img class="card-img-top" style={{height: "200px", objectFit: "contain"}} src={project.src} alt={project.title}></img></a>
+              <div class="card-body">
+                <h5 class="card-title"><a href={project.mainLink}>{project.title}</a> | {project.date}</h5>
+                <p class="card-text new-line">{project.description}</p>
+                <div className="projectButtons">
+                  {project.links.map((link, linkIndex) => (
+                    <a key="linkIndex" className="projectButton" href={link.link}><i>{link.name} </i></a> 
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      )
-    }
+      </div>
+    )
   }
+}

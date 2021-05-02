@@ -89,6 +89,11 @@ export default class Experience extends React.Component {
         ]
       }
     }
+
+    componentDidMount() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
   
     render() {
       return (
