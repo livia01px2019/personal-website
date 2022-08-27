@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.css';
+import tcpImage from './images/tcp.png'
+import beaverImage from './images/beaver.png'
 import zoomandenhanceImage from './images/zoom-and-enhance.png';
 import timagotchiImage from './images/timagotchi.png';
 import conserveImage from './images/conserve.jpg';
@@ -13,6 +15,30 @@ export default class Projects extends React.Component {
 
     this.state = {
       projects: [
+        {
+          title: "tcp/ip",
+          src: tcpImage,
+          mainLink: "",
+          links: [],
+          date: "Mar - May 2022",
+          description: "Engineered a virtual IP network using the Routing Information Protocol and an RFC-compliant TCP implementation on top of UDP in Go.\n\nImplemented the TCP handshake/teardown, retransmissions, and zero-window probing, reliably sending 1MB files across lossy networks."
+        },
+        {
+          title: "beaver: information flow control in rust",
+          src: beaverImage,
+          mainLink: "https://drive.google.com/file/d/1GXtFBa2lOy56OSX8OyBDSBRBOmZmsRde/view",
+          links: [
+            {
+              name: "source code",
+              link: "https://github.com/sreshtaaa/beaver-rust",
+            }, {
+              name: "writeup",
+              link: "https://drive.google.com/file/d/1GXtFBa2lOy56OSX8OyBDSBRBOmZmsRde/view",
+            }
+          ],
+          date: "Sept - Dec 2021",
+          description: "Researched and engineered a Rust library that allows programmers to instrument IFC via application-level data flow assertions. \n\nUtilized Rust’s type system and memory safety guarantees to enforce flexible data-flow policies while reducing developer burden and runtime overhead compared to other IFC implementations."
+        },
         {
           title: "theseus and the minotaur",
           src: theseusImage,
@@ -125,7 +151,7 @@ export default class Projects extends React.Component {
       <div>
         <h3 className="section-header" 
           style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>
-            my projects</h3> 
+            my projects + research</h3> 
         
         <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center"}}>
           {this.state.projects.map((project, index) => (

@@ -9,16 +9,46 @@ export default class About extends React.Component {
 
       this.state = {
         courses: [
-          "CSCI0300: Fundamentals of Computer Systems",
-          "CSCI1710: Logic for Systems",
-          "APMA1650: Statistical Inference I",
-          "CSCI0320: Software Engineering",
-          "CSCI0220: Discrete Structures and Probability",
-          "MATH0520: Linear Algebra",
-          "CSCI0190: Accelerated Intro to CS",
-          "MATH0200: Intermediate Calculus",
-          "ENGN0030: Introduction to Engineering"
-
+          {
+            semester: "Spring '22",
+            courses: [
+              "CSCI1680: Computer Networks",
+              "CSCI1380: Distributed Systems",
+              "ENGL0711: Literature and Social Mobility"
+            ],
+          }, {
+            semester: "Fall '21",
+            courses: [
+              "CSCI2390: Privacy-Conscious Computer Systems Research Seminar",
+              "CSCI1730: Programming Languages",
+              "CSCI1470: Deep Learning",
+              "RELS0045: Buddhism and Death"
+            ],
+          }, {
+            semester: "Spring '21",
+            courses: [
+              "CSCI0300: Fundamentals of Computer Systems",
+              "CSCI1710: Logic for Systems",
+              "APMA1650: Statistical Inference I",
+              "SOC0010: Intro to Sociology"
+            ],
+          }, {
+            semester: "Spring '20",
+            courses: [
+              "CSCI0320: Software Engineering",
+              "CSCI0220: Discrete Structures and Probability",
+              "MATH0520: Linear Algebra",
+              "ARCH0680: Water, Culture, and Power"
+            ]
+          }, {
+            semester: "Fall '19",
+            courses: [
+              "CSCI0190: Accelerated Intro to CS",
+              "MATH0200: Intermediate Calculus",
+              "ENGN0030: Introduction to Engineering",
+              "ENGL100F: Devils, Demons, and Do-Gooders"
+            ]
+          }
         ],
         links: [
           {
@@ -56,7 +86,7 @@ export default class About extends React.Component {
               </div>
               
               <div>
-                <p className="my-description">Hi! My name is Livia and I'm a sophomore from Shanghai, China. I'm currently studying Computer Science at Brown University, graduating in December 2023. Currently, I am a summer software engineering intern at Facebook in the Cosco team. I'm interested in Software Development and Systems Programming. Outside of CS, I enjoy English Literature and education (I'm a three-time Undergradute Teaching Assistant at Brown)!</p>
+                <p className="my-description">Hi! My name is Livia and I'm a sophomore from Shanghai, China and Seattle, WA. I'm currently studying Computer Science at Brown University, graduating in December 2023. I'm interested in Computer Systems, particularly Distributed Systems, Cloud Computing, and Programming Languages and enjoy research-adjacent software engineering. Outside of CS, I enjoy English Literature and education (I'm a five-time Teaching Assistant at Brown)!</p>
                 <p className="my-description">When I'm not studying or holding TA hours, I love to bake, sew, play tennis, and solve crosswords. I also solely listen to Broadway musicals or Taylor Swift.</p>
                 <div className="about-me-links">
                   {this.state.links.map((link, index) => (
@@ -64,11 +94,16 @@ export default class About extends React.Component {
                   ))}
                 </div>
                 <h5 style={{marginTop: "1rem"}}>coursework</h5>
-                <ul>
-                  {this.state.courses.map((course, index) => (
-                    <li key={index}><p>{course}</p></li>
+                {this.state.courses.map((sem, index) => (
+                    <div key={index}>
+                      <h6>{sem.semester}</h6>
+                      <ul>
+                        {sem.courses.map((course, cindex) => (
+                          <li key={cindex}><p>{course}</p></li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
               </div>
             </div>
         </div>

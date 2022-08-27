@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import googleImg from './images/google.png'
 import facebookImg from './images/facebook.png'
 import osheeppsImg from './images/osheepps.png'
 import brownImg from './images/brown.png'
@@ -13,14 +14,23 @@ export default class Experience extends React.Component {
       this.state = {
         software: [
           {
+            company: "google",
+            role: "software engineering intern",
+            img: googleImg,
+            description: "Developed and optimized a sorted shuffle writer flush feature in Java for Cosco, a distributed shuffle service that supports Apache Spark.\nFlush >400TB per day directly from writers, reducing memory allocation blocking time of skewed or slow stages that trigger the feature by over 84% and reducing total runtime of those stages by up to 27%.",
+            date: "jun - aug 2022",
+            mainLink: "https://www.google.com/",
+            links: [
+            ]
+          },
+          {
             company: "facebook",
             role: "software engineering intern",
             img: facebookImg,
-            description: "I am an incoming software engineering intern for Facebook for summer 2021.",
+            description: "Developed and optimized a sorted shuffle writer flush feature in Java for Cosco, a distributed shuffle service that supports Apache Spark.\nFlush >400TB per day directly from writers, reducing memory allocation blocking time of skewed or slow stages that trigger the feature by over 84% and reducing total runtime of those stages by up to 27%.",
             date: "may - aug 2021",
             mainLink: "https://www.facebook.com/",
-            links: [
-            ]
+            links: []
           },
           {
             company: "o!sheepps",
@@ -49,23 +59,31 @@ export default class Experience extends React.Component {
             description: "Liaised between developers and CARE Live Well, a Zambian healthcare nonprofit, to publicize their social impact to potential investors on their website. \nManaged 5 software engineers to conduct user testing, modernize the front-end and create a backend that is easily updatable by the client in AWS. \nPlan project lifecycle, transform client requests into technical requirements, conduct focus groups, prototype pages in Figma and develop using React.js.",
             date: "sept 2020 - apr 2021",
             mainLink: "https://www.developforgood.org/",
-            links: [
-              {
-                name: "website",
-                link: "https://www.o-sheepps.com/",
-              },
-            ]
+            links: [],
           }
         ], 
         teaching: [
           {
             company: "brown university",
+            role: "head teaching assistant: cs0300",
+            img: brownImg,
+            description: "Led a staff of 10 undergraduate TAs, spearheaded course development to create and improve assignments and labs covering memory management, operating systems basics, synchronization, and sharding in C, C++, and Rust.",
+            date: "dec 2021 - may 2022",
+            mainLink: "http://cs.brown.edu/courses/csci0300/2022/",
+            links: []
+          },
+          {
+            company: "brown university",
             role: "undergraduate teaching assistant",
             img: brownImg,
-            description: "Design/lead labs and workshops, hold TA hours, answer questions online, and grade assignments.\n\nCSCI0190 - Accelerated Intro to CS (Fall 2021): \nFunctional programming class of 70 students taught in Pyret. \n\nCSCI0320 - Software Engineering (Spring 2021): \nClass of 210 students taught in Java and various technologies such as React.js. Mentored 3 final project groups.\n\nCSCI0190 - Accelerated Intro to CS (Fall 2020): \nFunctional programming class of 120 students taught in Pyret. Mentored 8 students and promoted gender diversity through mixers.",
-            date: "sept 2020 - dec 2021",
+            description: "Design/lead labs and workshops, hold TA hours, answer questions online, and grade assignments.\n\nCSCI1730 - Programming Languages (Fall 2022) \n\nCSCI0190 - Accelerated Intro to CS (Fall 2021) \n\nCSCI0320 - Software Engineering (Spring 2021): \nClass of 210 students taught in Java and various technologies such as React.js. Mentored 3 final project groups.\n\nCSCI0190 - Accelerated Intro to CS (Fall 2020): \nFunctional programming class of 120 students taught in Pyret. Mentored 8 students and promoted gender diversity through mixers.",
+            date: "sept 2020 - now",
             mainLink: "https://www.brown.edu/",
             links: [
+              {
+                name: "cs1730",
+                link: "http://cs.brown.edu/courses/cs173/",
+              },
               {
                 name: "cs0190",
                 link: "http://cs.brown.edu/courses/csci0190/",
