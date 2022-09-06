@@ -34,6 +34,7 @@ export default class Header extends React.Component {
                       <Link to="/" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>ABOUT</Link>
                       <Link to="/projects" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>PROJECTS/RESEARCH</Link>
                       <Link to="/experience" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>EXPERIENCE</Link>
+                      <Link to="/coursework" className="header-link" style={this.props.dayMode ? this.props.dayTextStyle : this.props.nightTextStyle}>COURSEWORK</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

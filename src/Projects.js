@@ -20,7 +20,7 @@ export default class Projects extends React.Component {
           src: tcpImage,
           mainLink: "",
           links: [],
-          date: "Mar - May 2022",
+          date: "mar - may 2022",
           description: "Engineered a virtual IP network using the Routing Information Protocol and an RFC-compliant TCP implementation on top of UDP in Go.\n\nImplemented the TCP handshake/teardown, retransmissions, and zero-window probing, reliably sending 1MB files across lossy networks."
         },
         {
@@ -36,7 +36,7 @@ export default class Projects extends React.Component {
               link: "https://drive.google.com/file/d/1GXtFBa2lOy56OSX8OyBDSBRBOmZmsRde/view",
             }
           ],
-          date: "Sept - Dec 2021",
+          date: "sept - dec 2021",
           description: "Researched and engineered a Rust library that allows programmers to instrument IFC via application-level data flow assertions. \n\nUtilized Rust’s type system and memory safety guarantees to enforce flexible data-flow policies while reducing developer burden and runtime overhead compared to other IFC implementations."
         },
         {
@@ -49,7 +49,7 @@ export default class Projects extends React.Component {
               link: "https://github.com/rpaul48/theseus",
             }
           ],
-          date: "Mar - Apr 2021",
+          date: "mar - apr 2021",
           description: "Created a model in collaboration with 3 other developers representing the Theseus and the Minotaur puzzle including board and move validity to evaluate strategies and generate interesting mazes and solutions. \n\nBuilt using Forge/Alloy with a Javascript visualizer for CS1710 Logic for Systems. "
         },
         {
@@ -62,7 +62,7 @@ export default class Projects extends React.Component {
               link: "https://github.com/livia01px2019/curiosity-modeling",
             }
           ],
-          date: "Feb 2021",
+          date: "feb 2021",
           description: "Modelled short musical compositions by through various musical heuristics on rhythm, note choice, and variation. \n\nCreated using the Forge/Alloy specification language for CS1710 Logic for Systems."
         },
         {
@@ -79,7 +79,7 @@ export default class Projects extends React.Component {
               link: "https://github.com/QiuhongAnnaWei/HiMyNameIs"
             }
           ],
-          date: "Jan 2021",
+          date: "jan 2021",
           description: "Built a web app and RNN to generate unique names based on a name prefix, similar sounding name, and/or creativity level. Created with HTML/CSS/JS, Python, and Flask."
         },
         {
@@ -96,7 +96,7 @@ export default class Projects extends React.Component {
               link: "https://github.com/QiuhongAnnaWei/ConServe"
             }
           ],
-          date: "Jan 2021",
+          date: "jan 2021",
           description: "Developed an online tool that aims to reduce food waste by keeping track of groceries and generating recipes based on expiration dates. Designed in Adobe Illustrator and built using React.js and the RecipePuppy API. \n\n Winner of the 3rd Best Environmental Track Hack and Wolfram Award at HackDuke 2021."
         },
         {
@@ -117,7 +117,7 @@ export default class Projects extends React.Component {
               link: "https://devpost.com/software/zoom-and-enhance-v6t3qy"
             }
           ],
-          date: "Oct 2020",
+          date: "oct 2020",
           description: "Created web app for efficient notetaking during online classes using Vue.js, Bootstrap, Web Speech API, RAKE.js, and Heroku. \n\nSupports embedding of streaming sites, multi-language speech-to-text, automatic highlighting, manual styling, and keyword extraction through NLP. \n\n Finalist for the Best Professional Hack and Best Web-based Hack for the 2021 Hack@Home hackathon."
         },
         {
@@ -134,7 +134,7 @@ export default class Projects extends React.Component {
               link: "https://github.com/livia01px2019/timagotchi"
             }
           ],
-          date: "Feb 2020 – May 2020",
+          date: "feb 2020 – may 2020",
           description: "Built an educational tool that gamifies learning to engage students through a virtual pet, animations, points and achievements, and leaderboards. \n\nDeveloped in collaboration with a team of 3 developers and educators from 2 underfunded local public schools. \n\nDesigned in Adobe Illustrator, engineered using HTML/CSS/JavaScript, the Spark framework, Java, and SQL."
         },
       ]

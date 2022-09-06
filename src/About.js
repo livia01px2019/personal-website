@@ -8,48 +8,6 @@ export default class About extends React.Component {
       super(props);
 
       this.state = {
-        courses: [
-          {
-            semester: "Spring '22",
-            courses: [
-              "CSCI1680: Computer Networks",
-              "CSCI1380: Distributed Systems",
-              "ENGL0711: Literature and Social Mobility"
-            ],
-          }, {
-            semester: "Fall '21",
-            courses: [
-              "CSCI2390: Privacy-Conscious Computer Systems Research Seminar",
-              "CSCI1730: Programming Languages",
-              "CSCI1470: Deep Learning",
-              "RELS0045: Buddhism and Death"
-            ],
-          }, {
-            semester: "Spring '21",
-            courses: [
-              "CSCI0300: Fundamentals of Computer Systems",
-              "CSCI1710: Logic for Systems",
-              "APMA1650: Statistical Inference I",
-              "SOC0010: Intro to Sociology"
-            ],
-          }, {
-            semester: "Spring '20",
-            courses: [
-              "CSCI0320: Software Engineering",
-              "CSCI0220: Discrete Structures and Probability",
-              "MATH0520: Linear Algebra",
-              "ARCH0680: Water, Culture, and Power"
-            ]
-          }, {
-            semester: "Fall '19",
-            courses: [
-              "CSCI0190: Accelerated Intro to CS",
-              "MATH0200: Intermediate Calculus",
-              "ENGN0030: Introduction to Engineering",
-              "ENGL100F: Devils, Demons, and Do-Gooders"
-            ]
-          }
-        ],
         links: [
           {
             name: "linkedin",
@@ -93,17 +51,6 @@ export default class About extends React.Component {
                     <a href={link.link}><i>{link.name}</i></a>
                   ))}
                 </div>
-                <h5 style={{marginTop: "1rem"}}>coursework</h5>
-                {this.state.courses.map((sem, index) => (
-                    <div key={index}>
-                      <h6>{sem.semester}</h6>
-                      <ul>
-                        {sem.courses.map((course, cindex) => (
-                          <li key={cindex}><p>{course}</p></li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
               </div>
             </div>
         </div>

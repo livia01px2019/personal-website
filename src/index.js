@@ -14,6 +14,7 @@ import Header from './Header.js';
 import Error from './Error.js';
 import Projects from './Projects.js';
 import Experience from './Experience.js';
+import Courses from './Courses.js';
 
 import dayBackground from './images/day-background.jpg';
 import nightBackground from './images/night-background.jpg';
@@ -94,6 +95,11 @@ class App extends React.Component {
               <Route exact path="/experience" component={
                 (props) => (
                   <Experience {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
+                  nightTextStyle={this.nightTextStyle} />
+                )}></Route>
+              <Route exact path="/coursework" component={
+                (props) => (
+                  <Courses {...props} dayMode={this.state.dayMode} dayTextStyle={this.dayTextStyle}
                   nightTextStyle={this.nightTextStyle} />
                 )}></Route>
               <Route component={
